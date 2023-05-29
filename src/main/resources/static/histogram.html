@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="histogram.css">
+    <title>histogram</title>
+</head>
+<body>
+    <h1>Histogram Generator</h1>
+    <div class = "lower_bound-box">
+        <h2>Lower Bounds</h2>
+        <form action="">
+            <table>
+                <tr>
+                    <td>Max</td>
+                    <td><input class = "LB_input" type="number" id = "max" value = ""></td>
+                </tr>
+                <tr>
+                    <td>A+</td>
+                    <td><input class = "LB_input" type="number" id = "A+" value = ""></td>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td><input class = "LB_input" type="number" id = "A" value = ""></td>
+                </tr>
+                <tr>
+                    <td>A-</td>
+                    <td><input class = "LB_input" type="number" id = "A-" value = ""></td>
+                </tr>
+                <tr>
+                    <td>B+</td>
+                    <td><input class = "LB_input" type="number" id = "B+" value = ""></td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td><input class = "LB_input" type="number" id = "B" value = ""></td>
+                </tr>
+                <tr>
+                    <td>B-</td>
+                    <td><input class = "LB_input" type="number" id = "B-" value = ""></td>
+                </tr>
+                <tr>
+                    <td>C+</td>
+                    <td><input class = "LB_input" type="number" id = "C+" value = ""></td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td><input class = "LB_input" type="number" id = "C" value = ""></td>
+                </tr>
+                <tr>
+                    <td>C-</td>
+                    <td><input class = "LB_input" type="number" id = "C-" value = ""></td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td><input class = "LB_input" type="number" id = "D" value = ""></td>
+                </tr>
+                <tr>
+                    <td>F</td>
+                    <td><input class = "LB_input" type="number" id = "F" value = ""></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class = histogram-box>
+        <h2>Histogram</h2>
+        <table>
+            <tr>
+                <td>A+</td>
+                <td class="histogram">
+                  <div class="histogram-person person-Aplus">
+                    <span data-progress = "0"></span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>A</td>
+                <td class="histogram">
+                  <div class="histogram-person person-A">
+                    <span data-progress = "0"></span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>A-</td>
+                <td class="histogram">
+                  <div class="histogram-person person-Aminus">
+                    <span data-progress = "0"></span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>B+</td>
+                <td class="histogram">
+                  <div class="histogram-person person-Bplus">
+                    <span data-progress = "0"></span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>B</td>
+                <td class="histogram">
+                  <div class="histogram-person person-B">
+                    <span data-progress = "0"></span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>B-</td>
+                <td class="histogram">
+                  <div class="histogram-person person-Bminus">
+                    <span data-progress = "0"></span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>C+</td>
+                <td class="histogram">
+                  <div class="histogram-person person-Cplus">
+                    <span data-progress = "0"></span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>C</td>
+                <td class="histogram">
+                  <div class="histogram-person person-C">
+                    <span data-progress = "0"></span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>C-</td>
+                <td class="histogram">
+                  <div class="histogram-person person-Cminus">
+                    <span data-progress = "0"></span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>D</td>
+                <td class="histogram">
+                  <div class="histogram-person person-D">
+                    <span data-progress = "0"></span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>F</td>
+                <td class="histogram">
+                  <div class="histogram-person person-F">
+                    <span data-progress = "0"></span>
+                  </div>
+                </td>
+              </tr>
+        </table>
+    </div>
+    <div class = newGrade-box>
+        <label>New Grade: </label><input class = "NG-input" type="number" name = "newGrade"><button class = "newGradeButton" type = "submit">Add Grade</button>
+    </div>
+    <script src = "calculate.js" defer></script>
+</body>
+</html>
